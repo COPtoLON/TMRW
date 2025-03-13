@@ -1,22 +1,21 @@
 This document covers how the hedge fund is run at the business and operational level.
 
 ## Mission & Vision
-
 High-level statements of what the hedge fund aims to achieve.
 Clarifies values, long-term ambitions, and the type of culture and reputation you want to build.
-Corporate Structure & Governance
+## Corporate Structure & Governance
 
-## Legal and governance structure (LLC, partnership, etc.).
+### Legal and governance structure (LLC, partnership, etc.).
 Roles and responsibilities: Board of Directors, CEO, Portfolio Managers, Quantitative Researchers, etc.
 Compliance framework (SEC registration, regulatory compliance, legal counsel involvement).
 Operational Roadmap
 
-Plan for hiring key personnel (quant analysts, data scientists, risk managers).
+### Plan for hiring key personnel (quant analysts, data scientists, risk managers).
 Timeline for acquiring resources (technology infrastructure, data subscriptions, etc.).
 Milestones for expanding operations—e.g., from a single-strategy fund to multi-strategy pods.
 Capital & Investor Relations
 
-Fundraising approach: seed investments, institutional investors, high-net-worth individuals.
+### Fundraising approach: seed investments, institutional investors, high-net-worth individuals.
 Investor communication plans: periodic performance reports, annual meetings, newsletters.
 Growth plans for Assets Under Management (AUM) over time.
 Strategic Goals
