@@ -6,6 +6,7 @@ Clarifies values, long-term ambitions, and the type of culture and reputation yo
 ## Corporate Structure & Governance
 
 ### Legal and governance structure (LLC, partnership, etc.).
+![Corporate Structure](util/corporate structure.jpg)
 **Roles and responsibilities:** Board of Directors, CEO, Portfolio Managers, Quantitative Researchers, etc.
 Compliance framework (SEC registration, regulatory compliance, legal counsel involvement).
 Operational Roadmap
