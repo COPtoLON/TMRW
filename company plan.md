@@ -7,8 +7,7 @@ To finance our operations, we will seek funding from investors while keeping the
 * Class A shares, granting voting rights, and
 * Class B shares, providing a path to returns without conferring voting authority.
 
-Our target is to consistently deliver annual returns above 30% with minimal risk, regardless of market conditions. We plan to achieve this by adhering to the company’s overarching strategy: \
-**Expand, Establish, Excel, Repeat.**
+Our target is to consistently deliver annual returns above 30% with minimal risk, regardless of market conditions. We plan to achieve this by adhering to the company’s overarching strategy: **Expand, Establish, Excel, Repeat.**
 
 # Corporate Structure & Governance
 
