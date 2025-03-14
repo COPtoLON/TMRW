@@ -54,7 +54,7 @@ Citadel might “own the playing field” through broad market participation, ty
 Other funds may focus on volatility or on absorbing mispriced risk from weaker strategies.\
 Despite nuanced differences, all of these perspectives can be placed under an umbrella of large-population, strategic decision-making, a natural setting for mean-field games.
 
-## Mean-Field Game Theory
+### Mean-Field Game Theory
 Mean-field game (MFG) theory studies how strategic decision-making unfolds among many “small” agents in a large population. Each agent’s individual influence on the system is negligible, yet collectively these agents drive its overall dynamics. The term “mean field” is borrowed from physics, where the behavior of large systems can often be approximated by examining one representative particle in an “average” field created by the others.
 
 ### Traditional Game Theory vs. MFG:
@@ -67,7 +67,7 @@ Typically, MFGs in continuous time are associated with a coupled Hamilton–Jaco
 When agents can enter or leave the game (e.g., a new agent “spawned” under certain conditions), classical MFGs extend to branching mean-field games. This can be relevant for modeling demographic changes in an economy or repeated entry/exit in trading contexts.
 
 
-## Mean-Field Game Equations (Classical Form)
+### Mean-Field Game Equations (Classical Form)
 A canonical MFG problem in continuous time and a state space $\mathbb{R}^d$ includes:
 
 ### Backward HJB Equation:
@@ -89,4 +89,5 @@ Here:
 - $H$ is the Hamiltonian encoding the running cost and dynamics, while $G$ is a terminal cost functional.
 
 
+[footnote 1 - Mean fields - daniel Lacker]()
 
