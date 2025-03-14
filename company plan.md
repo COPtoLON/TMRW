@@ -95,7 +95,7 @@ Once you’re comfortably in the “Excel” phase—achieving stable profitabil
 * Establish the new approach or venture with the knowledge and proceeds from your current successes.
 * Excel anew, eventually building a diversified ecosystem of profitable strategies across multiple markets.
 
-# Final Thoughts
+## Additional Thoughts
 The Expand → Establish → Excel framework is intended to be cyclical. Each time you master a new area, you use that footing to expand yet again. In the fast-paced world of algorithmic trading, you’re never done growing—either you innovate or you risk being outpaced by competitors (who, at any moment, might be looking to attack, defend, or counter your positions).
 
 ### Moreover, each step has a feedback loop:
@@ -114,8 +114,6 @@ By continually cycling through Expand, Establish, and Excel—with acute awarene
 ### Legal and governance structure (LLC, partnership, etc.).
 ![Corporate Structure](https://github.com/COPtoLON/TMRW/blob/ac464545aa1d5634eaa8a9d53328853d2a69550b/util/corporate%20structure.jpg)
 **Roles and responsibilities:** Board of Directors, CEO, Portfolio Managers, Quantitative Researchers, etc.
-
-# Overarching algorithm
 
 # Operational Roadmap
 
