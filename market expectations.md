@@ -1,10 +1,25 @@
-This covers all your overarching views on markets, competitor landscapes, and key theoretical underpinnings. It might also serve as a “living” market outlook and theoretical playbook.
+# Market expectations
+This document is meant to serve as a manifest to describe the company's expectations about the market it would be operating in. It could also be considered an operational expectation plan.
+It will cover all our overarching views on markets, competitor landscapes, and key theoretical underpinnings. It might also serve as a “living” market outlook and theoretical playbook.
 
-Macro & Micro Market Theories
+# Macro & Micro Market considerations
+The markets, this company will be operating in, will have multiple layers. There will be:
+- Macroeconomic factors: interest rates, inflation, global economic indicators.
+- Market microstructure considerations: liquidity, order book dynamics, transaction costs.
+- Theoretical considerations (e.g., Efficient Market Hypothesis vs. Adaptive Market Hypothesis).
+- external events
+- market participant effects
 
-Macroeconomic factors: interest rates, inflation, global economic indicators.
-Market microstructure considerations: liquidity, order book dynamics, transaction costs.
-Theoretical frameworks (e.g., Efficient Market Hypothesis vs. Adaptive Market Hypothesis).
+
+# Operations considerations
+
+# Participants
+
+# Edges
+
+# Model
+
+
 Expectations & Scenario Analysis
 
 Core assumptions about market trends: bull/bear cycles, sector rotations.
