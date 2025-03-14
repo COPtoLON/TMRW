@@ -106,8 +106,7 @@ By continually cycling through Expand, Establish, and Excel—with acute awarene
 
 *footnote 2: Linkedin post referencing my considerations on the Expand, Establish, Excel framework*
 
-
-
+**from here and down, I will still have to work out some reflections on the corporate structure and operational roadmap**
 
 # Corporate Structure
 
@@ -128,10 +127,14 @@ An important goal, would be to have an operational roadmap, wherein there would 
 - Timeline for fundraising (seed investments, institutional investors, etc. ).
 - Milestones for expanding operations—e.g., from a single-strategy fund to multi-strategy pods.
 - legal & compliance requirements fulfilled (SEC registration, regulatory compliance, legal counsel involvement).
+<br>
 
 ## Plan for hiring key personnel 
-
+*this is sadly unfinished for the moment*
+<br>
 ## Plan for company resources
+*this is sadly unfinished for the moment*
+<br>
 
 ## Fundraising plan
 Investor communication plans: periodic performance reports, annual meetings, newsletters.
@@ -140,12 +143,20 @@ Growth plans for Assets Under Management (AUM) over time.
 ## Compliance framework 
 (SEC registration, regulatory compliance, legal counsel involvement).
 
+<br>
+
 ## Long-term strategy & Milestones
 from small specialized fund to multi-market global fund
 - Year 1 annualized return target
 - Year 1 Sharpe ratio
 - Year 1 drawdown limits
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # Notes & Links
 [Footnote 1 - LinkedIn Post on Large Scale Structure](https://www.linkedin.com/posts/coptolon_reflections-on-the-large-scale-structure-activity-7300921866582396929-oTwe?utm_source=share&utm_medium=member_desktop&rcm=ACoAACM9ERoBU_0PrmgLHCCk08Dra-WDB0g6iV4)
