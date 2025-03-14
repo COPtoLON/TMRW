@@ -2,48 +2,6 @@
 This document is meant to serve as a manifest to describe the company's expectations about the market it would be operating in. It could also be considered an operational expectation plan.
 It will cover all our overarching views on markets, competitor landscapes, and key theoretical underpinnings. It might also serve as a “living” market outlook and theoretical playbook.
 
-## Macro & Micro Market considerations
-The markets, this company will be operating in, will have multiple layers. There will be:
-- Macroeconomic factors: interest rates, inflation, global economic indicators.
-- Market microstructure considerations: liquidity, order book dynamics, transaction costs.
-- Theoretical considerations (e.g., Efficient Market Hypothesis vs. Adaptive Market Hypothesis).
-- external events - most any market experiences external events, EX: news, economic crisis, new policies.
-- market participant effects - most markets are effected by other market participants, these can affect the market strategy or drain off of profits.
-
-TO add to this, there ought to be considerations associated with the market participation, on the overall market behaviour, popularily called blue-ocean, red-ocean.
-This will help associate whether the company expects to have to change their market participation state (Neutral, defense, attack, counter) often, or sparsely
-
-## Operations considerations
-There is a large range of possible actions in the market, these will be considered as operations.
-- One can buy and hold, this is called going long
-- One can borrow and sell an asset, this is called shorting
-- One can buy options, futures or swaps with regards to a positions, in this way strategic implementations of positions can be taken into account
-- One can buy an asset in one exchange and sell it higher in another exchange, in this way benefitting from differences in exchanges.
-- One can borrow money, to perform the previous actions, this is called leveraging
-- One can propose bid or ask prices in the market, in this way building an expectation of what the other market participants think of certain prices
-- ...
-
-## Participants
-In respect to participants, a general consideration will be that some participants can be easily observed, some may be less observable.
-In the market we may be able to track bid-ask spreads and market depth, but be unable to register what participant has placed what trades.
-We may be needed to subscribe to larger systems or use external data providers, to keep track of movements in hindsight.
-
-## Edges
-THere are a few areas of the markets, which have yet to be fully optimized or in which various companies are already fighting to become the best.
-These are the edges, these are the areas, where we can excel in the future, to become the best. Notable mentions are:
-- Speed of execution, both in:
-  - actual execution of the algorithm
-  - Latency to the exchanges
-  - Computational approximations
-- Predictive quality, both accuracy and precision
-- Coverage, the goal of covering as much of the market as possible, despite market impact
-- stealth, keeping the execution of a trade hidden
-- Most adaptable algorithms
-- Best strategic decision making  
-
-
-
-
 ## Macro & Micro Market Considerations
 Our target markets have multiple interconnected layers:
 1. Macroeconomic Factors: Examples include interest rates, inflation trends, and global economic indicators.
