@@ -109,11 +109,17 @@ By continually cycling through Expand, Establish, and Excel—with acute awarene
 
 
 
-# Corporate Structure & Governance
+# Corporate Structure
 
-### Legal and governance structure (LLC, partnership, etc.).
+### Company map
 ![Corporate Structure](https://github.com/COPtoLON/TMRW/blob/ac464545aa1d5634eaa8a9d53328853d2a69550b/util/corporate%20structure.jpg)
-**Roles and responsibilities:** Board of Directors, CEO, Portfolio Managers, Quantitative Researchers, etc.
+<br>
+**Roles and responsibilities:** 
+Deeper consideration must be given to key roles such as the Board of Directors, CEO, Portfolio Managers, and Quantitative Researchers. I have not yet delved into the finer details of corporate, compliance, and legal structures for such an organization, but I plan to explore these aspects in the future.
+
+For now, my focus has been on optimizing the performance of each trading or strategy pod. I recognize that my awareness of the high standards involved may also explain why I currently see few job opportunities at such firms, akin to what I am proposing here, my mind goes to companies such as Two Sigma, Citadel, Man AHL, Millenium Management.
+
+In a venture of this nature, every position—from junior operations to quantitative research—must be filled by individuals who are exceptionally capable, quick to learn, detail-oriented, and well-versed in their respective area of expertise. Simply put, there is no room for error, even in roles that might seem less significant.
 
 # Operational Roadmap
 
