@@ -15,6 +15,30 @@ The following parts are pieces to the model we expect to use as an approximation
 
 # Model - Trader
 
+Any good and thought-through trading algorithm must have some considerations on the following:
+
+Predictions and conditional logic based on scenarios, a good algorithm, has some predictive properties and some conditional logic properties. Being able to discern some scenarios from others.
+Risk measurements and statistical considerations, to be able to consider the possibilities of being wrong and what to do if such a case occurs.
+A genuine strategical framework, so as to know when to set up derivatives, when to short, go long or when to actively push the market.
+A genuine trading algorithm, must also know human behaviour. To be able to consider when to be active or passive. When to switch strategies.
+
+### Key Components for a Trading Algorithm
+Any well-considered trading algorithm must incorporate several elements:
+
+### Predictions and Conditional Logic
+The algorithm should have predictive capabilities (forecasting future market behavior) and conditional logic to adapt to specific scenarios.
+
+### Risk Measurements and Statistical Considerations
+Risk management and modeling of potential losses are essential. A robust design contemplates the probability of being wrong and prescribes adjustments—e.g., scaling down positions.
+
+### Strategic Framework
+Deciding how and when to use derivatives, short selling, or other asset allocations requires a structured policy. The algorithm should recognize when and how to influence or “push” the market.
+
+### Incorporation of Human Behavior
+Although quantitative in nature, any algorithm benefits from considering behavioral finance aspects—e.g., herding, panic selling, or FOMO (fear of missing out)—that can dominate at certain times.
+
+
+
 ## Overall model
 
 ### Market states
