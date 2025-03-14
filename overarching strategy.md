@@ -23,6 +23,8 @@ The following parts are pieces to the model we expect to use as an approximation
 
 ## Overall model
 
+![Model](https://github.com/COPtoLON/TMRW/blob/2da41e162ce04c25e83712f98d1caf6d9217e76d/util/model.jpg)
+
 ## Predictions & Conditional Logical
 
 1. **Statistics** - such as stationarity, regularity, autocorrelations
