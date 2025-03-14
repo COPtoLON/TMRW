@@ -6,6 +6,7 @@ The primary goal of our hedge fund is to preserve and optimize its overall value
 To finance our operations, we will seek funding from investors while keeping the investor base streamlined—thus minimizing the number of individuals who can directly influence our business model. We plan to do this by offering two share classes:
 * Class A shares, granting voting rights, and
 * Class B shares, providing a path to returns without conferring voting authority.
+
 Our target is to consistently deliver annual returns above 30% with minimal risk, regardless of market conditions. We plan to achieve this by adhering to the company’s overarching strategy: Expand, Establish, Excel, Repeat.
 
 # Corporate Structure & Governance
