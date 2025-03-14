@@ -37,15 +37,19 @@ These edges represent our potential pathways to outperformance. By focusing on i
 
 
 # Model
-Putting these considerations together, we obtain an approximation to a model of the markets we opperate in.
-We expect for any market we operate in to have the following.
+By integrating these considerations, we approximate a model for the markets in which we operate. We anticipate that any such market will exhibit the following characteristics:
 
-1. A function describing the value of the collective market or a series of functions describing the value of each market participant.
-2. A range of agents or participants seeking a corresponding goal to ours, to obtain value from the market and maximize their share.
-3. Each agent or participant has a state, with one or multiple variables corresponding to effects of the state.
-4. A series of variables effecting the market and a series of variables effecting the participants
-5. A function to induce the corresponding external events
-6. A range of functions representing the market dynamics, such as transaction cost, liquidity, dynamics etc.
+1. Value Functions - Either a single function capturing the overall market value or several functions reflecting the value of individual participants.
+
+2. Agent Goals - A collection of market participants or agents, each aiming—much like our own strategy—to extract and maximize value from the market.
+
+3. States & Variables - Every participant carries a “state,” comprised of one or more variables that influence or determine their impact on outcomes.
+
+4. Market & Participant Variables - A set of parameters or inputs shaping both the market’s collective behavior and the participants’ decision-making processes.
+
+5. External Events - A mechanism that introduces exogenous shocks—such as major news or policy changes—affecting market conditions over time.
+
+6. Dynamic Functions - Functions that govern market-specific aspects, such as transaction costs, liquidity, or general price and flow dynamics.
 
 
 [footnote 1 - Mean fields - daniel Lacker]()
