@@ -43,7 +43,6 @@ Expansion is rarely cheap:
 
 On the plus side, each new strategy or asset can diversify revenue streams, reducing reliance on a single source of profit. The decision to expand (and how aggressively to do so) often hinges on your firm’s risk tolerance, available capital, and the competitive landscape.
 
-[LinkedIn Post](https://www.linkedin.com/posts/coptolon_quantfinance-investing-algorithmictrading-activity-7302320668090494977-M0BW?utm_source=share&utm_medium=member_desktop&rcm=ACoAACM9ERoBU_0PrmgLHCCk08Dra-WDB0g6iV4)
 
 ## Establish
 
@@ -77,8 +76,6 @@ This is where the “Defensive, Aggressive, Counter, or Neutral” states come i
 * Counter if competitors attempt to undermine your profitability—e.g., using options to hedge out the effect of a rival’s short attack.
 * Remain Neutral (or continue your preplanned path) if the environment is stable, or if you believe changing tactics doesn’t improve your edge.
 
-[LinkedIn Post](https://www.linkedin.com/posts/coptolon_quantfinance-investing-algorithmictrading-activity-7302320668090494977-M0BW?utm_source=share&utm_medium=member_desktop&rcm=ACoAACM9ERoBU_0PrmgLHCCk08Dra-WDB0g6iV4)
-
 ## Excel
 ### Achieving Steady Profitability
 Once your new venture (strategy, asset class, or market) is established and your firm has adapted to the competitive landscape, the aim is to excel—i.e., realize consistent, sustainable returns. Excelling might involve:
@@ -98,7 +95,7 @@ Once you’re comfortably in the “Excel” phase—achieving stable profitabil
 * Establish the new approach or venture with the knowledge and proceeds from your current successes.
 * Excel anew, eventually building a diversified ecosystem of profitable strategies across multiple markets.
 
-## Final Thoughts
+# Final Thoughts
 The Expand → Establish → Excel framework is intended to be cyclical. Each time you master a new area, you use that footing to expand yet again. In the fast-paced world of algorithmic trading, you’re never done growing—either you innovate or you risk being outpaced by competitors (who, at any moment, might be looking to attack, defend, or counter your positions).
 
 ### Moreover, each step has a feedback loop:
@@ -107,8 +104,7 @@ The Expand → Establish → Excel framework is intended to be cyclical. Each ti
 
 By continually cycling through Expand, Establish, and Excel—with acute awareness of the market “states” (defensive, aggressive, counter, or neutral)—a quantitative firm can build a resilient and adaptive portfolio of strategies that stand the test of an ever-evolving market landscape.
 
-[LinkedIn Post](https://www.linkedin.com/posts/coptolon_quantfinance-investing-algorithmictrading-activity-7302320668090494977-M0BW?utm_source=share&utm_medium=member_desktop&rcm=ACoAACM9ERoBU_0PrmgLHCCk08Dra-WDB0g6iV4)
-
+*footnote 2: Linkedin post referencing my considerations on the Expand, Establish, Excel framework*
 
 
 
@@ -141,7 +137,8 @@ Long-term scaling strategy (e.g., from small specialized fund to multi-market gl
 
 
 
-
+# Notes & Links
 [Footnote 1 - LinkedIn Post on Large Scale Structure](https://www.linkedin.com/posts/coptolon_reflections-on-the-large-scale-structure-activity-7300921866582396929-oTwe?utm_source=share&utm_medium=member_desktop&rcm=ACoAACM9ERoBU_0PrmgLHCCk08Dra-WDB0g6iV4)
 
+[Footnote 2 - LinkedIn Post on Expand, Establish, Excel and how this is part of a good fund](https://www.linkedin.com/posts/coptolon_quantfinance-investing-algorithmictrading-activity-7302320668090494977-M0BW?utm_source=share&utm_medium=member_desktop&rcm=ACoAACM9ERoBU_0PrmgLHCCk08Dra-WDB0g6iV4)
 
