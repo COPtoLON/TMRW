@@ -9,33 +9,6 @@ To finance our operations, we will seek funding from investors while keeping the
 
 Our target is to consistently deliver annual returns above 30% with minimal risk, regardless of market conditions. We plan to achieve this by adhering to the company’s overarching strategy: **Expand, Establish, Excel, Repeat.**
 
-# Corporate Structure & Governance
-
-### Legal and governance structure (LLC, partnership, etc.).
-![Corporate Structure](https://github.com/COPtoLON/TMRW/blob/ac464545aa1d5634eaa8a9d53328853d2a69550b/util/corporate%20structure.jpg)
-**Roles and responsibilities:** Board of Directors, CEO, Portfolio Managers, Quantitative Researchers, etc.
-
-# Overarching algorithm
-
-# Operational Roadmap
-
-### Plan for hiring key personnel (quant analysts, data scientists, risk managers).
-Timeline for acquiring resources (technology infrastructure, data subscriptions, etc.).
-Milestones for expanding operations—e.g., from a single-strategy fund to multi-strategy pods.
-Capital & Investor Relations
-
-### Fundraising approach: seed investments, institutional investors, high-net-worth individuals.
-Investor communication plans: periodic performance reports, annual meetings, newsletters.
-Growth plans for Assets Under Management (AUM) over time.
-Strategic Goals
-
-
-Compliance framework (SEC registration, regulatory compliance, legal counsel involvement).
-
-Clear, quantifiable targets: e.g., annualized return target, Sharpe ratio, drawdown limits.
-Long-term scaling strategy (e.g., from small specialized fund to multi-market global fund).
-
-
 # Overarching algorithm
 [LinkedIn post](https://www.linkedin.com/posts/coptolon_reflections-on-the-large-scale-structure-activity-7300921866582396929-oTwe?utm_source=share&utm_medium=member_desktop&rcm=ACoAACM9ERoBU_0PrmgLHCCk08Dra-WDB0g6iV4)
 
@@ -136,6 +109,37 @@ The Expand → Establish → Excel framework is intended to be cyclical. Each ti
 By continually cycling through Expand, Establish, and Excel—with acute awareness of the market “states” (defensive, aggressive, counter, or neutral)—a quantitative firm can build a resilient and adaptive portfolio of strategies that stand the test of an ever-evolving market landscape.
 
 [LinkedIn Post](https://www.linkedin.com/posts/coptolon_quantfinance-investing-algorithmictrading-activity-7302320668090494977-M0BW?utm_source=share&utm_medium=member_desktop&rcm=ACoAACM9ERoBU_0PrmgLHCCk08Dra-WDB0g6iV4)
+
+
+
+
+
+# Corporate Structure & Governance
+
+### Legal and governance structure (LLC, partnership, etc.).
+![Corporate Structure](https://github.com/COPtoLON/TMRW/blob/ac464545aa1d5634eaa8a9d53328853d2a69550b/util/corporate%20structure.jpg)
+**Roles and responsibilities:** Board of Directors, CEO, Portfolio Managers, Quantitative Researchers, etc.
+
+# Overarching algorithm
+
+# Operational Roadmap
+
+### Plan for hiring key personnel (quant analysts, data scientists, risk managers).
+Timeline for acquiring resources (technology infrastructure, data subscriptions, etc.).
+Milestones for expanding operations—e.g., from a single-strategy fund to multi-strategy pods.
+Capital & Investor Relations
+
+### Fundraising approach: seed investments, institutional investors, high-net-worth individuals.
+Investor communication plans: periodic performance reports, annual meetings, newsletters.
+Growth plans for Assets Under Management (AUM) over time.
+Strategic Goals
+
+
+Compliance framework (SEC registration, regulatory compliance, legal counsel involvement).
+
+Clear, quantifiable targets: e.g., annualized return target, Sharpe ratio, drawdown limits.
+Long-term scaling strategy (e.g., from small specialized fund to multi-market global fund).
+
 
 
 
