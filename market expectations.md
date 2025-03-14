@@ -1,6 +1,5 @@
 # Market expectations
-This document is meant to serve as a manifest to describe the company's expectations about the market it would be operating in. It could also be considered an operational expectation plan.
-It will cover all our overarching views on markets, competitor landscapes, and key theoretical underpinnings. It might also serve as a “living” market outlook and theoretical playbook.
+This document outlines the company's expectations and operational plans for its target markets. It offers a comprehensive view of market conditions, competitive landscapes, and key theoretical principles, and is intended to serve as a “living” resource—evolving over time as our market outlook and strategic insights develop.
 
 ## Macro & Micro Market Considerations
 Our target markets have multiple interconnected layers:
@@ -37,13 +36,7 @@ Certain areas remain under-optimized or heavily contested, presenting opportunit
 These edges represent our potential pathways to outperformance. By focusing on innovation in speed, predictive power, and flexible execution, we aim to thrive in a competitive market landscape.
 
 
-
-
-
-
-
-
-## Model
+# Model
 
 ### market dynamics
 We can imagine a system consisting of multiple agents—referred to as partakers—each endowed with a certain measure. The overarching goal is for each agent to maximize its own measure, which might represent profit, wealth, or another relevant metric. This is a broad framework in which a trading algorithm would naturally be a sub-problem, aiming to maximize gains under certain constraints (e.g., risk limits, available market liquidity).
