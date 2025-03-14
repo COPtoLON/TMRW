@@ -1,20 +1,24 @@
-This document covers how the hedge fund is run at the business and operational level.
+*This document covers how the hedge fund is run at the business and operational level.*
 
 # Mission & Vision
-High-level statements of what the hedge fund aims to achieve.
-Clarifies values, long-term ambitions, and the type of culture and reputation you want to build.
+The main goal of the hedge fund would be to optimize the value conserved in the fund.
+In this we mean that we will try to minimize the risk associated with our operations, but at the same time attempt to gain the highest return on investments possible within that frame.
+In this we have drawn an equal to the following Objective: For a single particle in an open system, research an algorithm to optimize and maximally conserve enthalpy/energy \
+We aim to do this by drawing in funding from investors in accordance with a balance between larger funding as required for bettering our operations and keeping the amount of investors to a minimum, to not draw out the number of voters and influencers on our business model, this will be done by having two types of investment opportunities in the business, a share class A and share class B, where one obtains the possibility to vote in business decisions and one will have the opportunity of gaining returns, from the venture.
 
-## Overarching algorithm
+The goal is to consistantly have a return above 30% per year. With a minimum of risk, regardless of market conditions.
+We will do this by following the company's overarching strategy.
+Expand, Establish, Excel, repeat.
 
-
-## Corporate Structure & Governance
+# Corporate Structure & Governance
 
 ### Legal and governance structure (LLC, partnership, etc.).
 ![Corporate Structure](https://github.com/COPtoLON/TMRW/blob/ac464545aa1d5634eaa8a9d53328853d2a69550b/util/corporate%20structure.jpg)
 **Roles and responsibilities:** Board of Directors, CEO, Portfolio Managers, Quantitative Researchers, etc.
-### Operational Roadmap
 
+# Overarching algorithm
 
+# Operational Roadmap
 
 ### Plan for hiring key personnel (quant analysts, data scientists, risk managers).
 Timeline for acquiring resources (technology infrastructure, data subscriptions, etc.).
@@ -32,16 +36,6 @@ Compliance framework (SEC registration, regulatory compliance, legal counsel inv
 Clear, quantifiable targets: e.g., annualized return target, Sharpe ratio, drawdown limits.
 Long-term scaling strategy (e.g., from small specialized fund to multi-market global fund).
 
-
-# Main objective
-**Third draft:** \
-Objective: For a single particle in an open system, research an algorithm to optimize and maximally conserve enthalpy/energy \
-<br>
-**Second draft:** \
-Objective: Optimally conserve enthalpy for a single particle in an open market. \
-<br>
-**first draft:**\
-Objective: To earn money by running a successful algorithmic investment fund.
 
 # Overarching algorithm
 [LinkedIn post](https://www.linkedin.com/posts/coptolon_reflections-on-the-large-scale-structure-activity-7300921866582396929-oTwe?utm_source=share&utm_medium=member_desktop&rcm=ACoAACM9ERoBU_0PrmgLHCCk08Dra-WDB0g6iV4)
