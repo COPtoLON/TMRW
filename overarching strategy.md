@@ -4,13 +4,28 @@
 
 ## Overall model
 
+### Market states
+
+
 ## multi-layer AI
+
+### Strategist bot
+
+### Portfolio bot
+
+### Risk bot
+
+### validation bot
 
 ## Signal A
 
+
 ## Signal B
 
+
 ## Signal C
+
+## Execution
 Expectations & Scenario Analysis
 
 Core assumptions about market trends: bull/bear cycles, sector rotations.
