@@ -1,4 +1,13 @@
 # Model - Market
+By integrating these considerations, we approximate a model for the markets in which we operate. We anticipate that any such market will exhibit the following characteristics:
+
+- **Value Functions** - Either a single function capturing the overall market value or several functions reflecting the value of individual participants.
+- **Agent Goals** - A collection of market participants or agents, each aiming—much like our own strategy—to extract and maximize value from the market.
+- **States & Variables** - Every participant carries a “state,” comprised of one or more variables that influence or determine their impact on outcomes.
+- **Market & Participant Variables** - A set of parameters or inputs shaping both the market’s collective behavior and the participants’ decision-making processes.
+- **External Events** - A mechanism that introduces exogenous shocks—such as major news or policy changes—affecting market conditions over time.
+- **Dynamic Functions** - Functions that govern market-specific aspects, such as transaction costs, liquidity, or general price and flow dynamics.
+
 
 # Model - Trader
 
