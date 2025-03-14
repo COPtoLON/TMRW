@@ -51,6 +51,17 @@ By integrating these considerations, we approximate a model for the markets in w
 
 6. **Dynamic Functions** - Functions that govern market-specific aspects, such as transaction costs, liquidity, or general price and flow dynamics.
 
+## Limitations of Mean-Field Models
+Our initial modeling approach involved mean-field theory—particularly particle systems and mean-field games—to simulate market participants trading an asset. However, we found these methods insufficient for capturing the full range of real-world market behavior. As highlighted in a lecture by Daniel Lacker:
+
+- **Changing Number of Participants** – Standard mean-field models typically assume a fixed number of agents, whereas real markets involve participants entering or exiting.
+- **Heterogeneous Variables** – Agents in actual markets may have different sets of state variables; classical mean-field frameworks often assume uniformity.
+- **Information Disparities** – The distribution and quality of information accessible to each participant can vary significantly.
+- **Clustering Effects** – Participants may form subgroups or clusters with correlated behaviors, which remain unaccounted for in many mean-field approaches.
+
+These gaps underscore the need for a more robust, flexible model that accommodates varying population sizes, heterogeneous agent states, and diverse information channels.
+
+
 # Footnotes
 [footnote 1 - Mean fields - daniel Lacker]()
 
