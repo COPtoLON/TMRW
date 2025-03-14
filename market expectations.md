@@ -51,6 +51,6 @@ By integrating these considerations, we approximate a model for the markets in w
 
 6. **Dynamic Functions** - Functions that govern market-specific aspects, such as transaction costs, liquidity, or general price and flow dynamics.
 
-
+# Footnotes
 [footnote 1 - Mean fields - daniel Lacker]()
 
