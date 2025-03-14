@@ -122,23 +122,29 @@ For now, my focus has been on optimizing the performance of each trading or stra
 In a venture of this nature, every position—from junior operations to quantitative research—must be filled by individuals who are exceptionally capable, quick to learn, detail-oriented, and well-versed in their respective area of expertise. Simply put, there is no room for error, even in roles that might seem less significant.
 
 # Operational Roadmap
+An important goal, would be to have an operational roadmap, wherein there would be the following:
+- Timeline for acquiring key personnel (quant analysts, data scientists, risk managers).
+- Timeline for acquiring resources (technology infrastructure, data subscriptions, etc.).
+- Timeline for fundraising (seed investments, institutional investors, etc. ).
+- Milestones for expanding operations—e.g., from a single-strategy fund to multi-strategy pods.
+- legal & compliance requirements fulfilled (SEC registration, regulatory compliance, legal counsel involvement).
 
-### Plan for hiring key personnel (quant analysts, data scientists, risk managers).
-Timeline for acquiring resources (technology infrastructure, data subscriptions, etc.).
-Milestones for expanding operations—e.g., from a single-strategy fund to multi-strategy pods.
-Capital & Investor Relations
+## Plan for hiring key personnel 
 
-### Fundraising approach: seed investments, institutional investors, high-net-worth individuals.
+## Plan for company resources
+
+## Fundraising plan
 Investor communication plans: periodic performance reports, annual meetings, newsletters.
 Growth plans for Assets Under Management (AUM) over time.
-Strategic Goals
 
+## Compliance framework 
+(SEC registration, regulatory compliance, legal counsel involvement).
 
-Compliance framework (SEC registration, regulatory compliance, legal counsel involvement).
-
-Clear, quantifiable targets: e.g., annualized return target, Sharpe ratio, drawdown limits.
-Long-term scaling strategy (e.g., from small specialized fund to multi-market global fund).
-
+## Long-term strategy & Milestones
+from small specialized fund to multi-market global fund
+- Year 1 annualized return target
+- Year 1 Sharpe ratio
+- Year 1 drawdown limits
 
 
 # Notes & Links
