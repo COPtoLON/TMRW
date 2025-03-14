@@ -7,13 +7,13 @@ To finance our operations, we will seek funding from investors while keeping the
 * Class A shares, granting voting rights, and
 * Class B shares, providing a path to returns without conferring voting authority.
 
-Our target is to consistently deliver annual returns above 30% with minimal risk, regardless of market conditions. We plan to achieve this by adhering to the company’s overarching strategy: **Expand, Establish, Excel, Repeat.**
+Our target is to consistently deliver annual returns above 30% with minimal risk, regardless of market conditions. We plan to achieve this by adhering to the company’s overarching strategy: **Expand, Establish, Excel, Repeat.** which works to both diversify and accelerate returns.
 
 # Overarching strategy
 [LinkedIn post](https://www.linkedin.com/posts/coptolon_reflections-on-the-large-scale-structure-activity-7300921866582396929-oTwe?utm_source=share&utm_medium=member_desktop&rcm=ACoAACM9ERoBU_0PrmgLHCCk08Dra-WDB0g6iV4)
 
-**Goal: Maximum Conservation of Value**
-
+**Goal: To optimally balance returns and risks, to gain a risk-adjusted ROI of 30% or more per year perpetually**
+The expected process to obtain our goals will be the following:
 Repeat the following process.
 - Expand into new markets, strategies, or assets.
 - Establish a solid foundation in each new area.
@@ -22,8 +22,6 @@ Repeat the following process.
 - Repeat the cycle, continuously searching for new expansion opportunities.
 
 <img src="https://github.com/COPtoLON/KB/blob/main/Quantitative%20Finance/overblik.jpg" width="1000" alt="Algorithm diagram">
-
-
 
 ## Expand
 ### Identifying New Opportunities
