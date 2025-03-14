@@ -1,14 +1,12 @@
 *This document covers how the hedge fund is run at the business and operational level.*
 
 # Mission & Vision
-The main goal of the hedge fund would be to optimize the value conserved in the fund.
-In this we mean that we will try to minimize the risk associated with our operations, but at the same time attempt to gain the highest return on investments possible within that frame.
-In this we have drawn an equal to the following Objective: For a single particle in an open system, research an algorithm to optimize and maximally conserve enthalpy/energy \
-We aim to do this by drawing in funding from investors in accordance with a balance between larger funding as required for bettering our operations and keeping the amount of investors to a minimum, to not draw out the number of voters and influencers on our business model, this will be done by having two types of investment opportunities in the business, a share class A and share class B, where one obtains the possibility to vote in business decisions and one will have the opportunity of gaining returns, from the venture.
+The primary goal of our hedge fund is to preserve and optimize its overall value. We will carefully balance minimizing risk with achieving the highest possible returns. This objective takes inspiration from the concept of a single particle in an open system and the research on algorithms that optimize and conserve enthalpy or energy.
 
-The goal is to consistantly have a return above 30% per year. With a minimum of risk, regardless of market conditions.
-We will do this by following the company's overarching strategy.
-Expand, Establish, Excel, repeat.
+To finance our operations, we will seek funding from investors while keeping the investor base streamlined—thus minimizing the number of individuals who can directly influence our business model. We plan to do this by offering two share classes:
+* Class A shares, granting voting rights, and
+* Class B shares, providing a path to returns without conferring voting authority.
+Our target is to consistently deliver annual returns above 30% with minimal risk, regardless of market conditions. We plan to achieve this by adhering to the company’s overarching strategy: Expand, Establish, Excel, Repeat.
 
 # Corporate Structure & Governance
 
