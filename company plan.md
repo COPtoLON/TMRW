@@ -9,7 +9,7 @@ To finance our operations, we will seek funding from investors while keeping the
 
 Our target is to consistently deliver annual returns above 30% with minimal risk, regardless of market conditions. We plan to achieve this by adhering to the company’s overarching strategy: **Expand, Establish, Excel, Repeat.**
 
-# Overarching algorithm
+# Overarching strategy
 [LinkedIn post](https://www.linkedin.com/posts/coptolon_reflections-on-the-large-scale-structure-activity-7300921866582396929-oTwe?utm_source=share&utm_medium=member_desktop&rcm=ACoAACM9ERoBU_0PrmgLHCCk08Dra-WDB0g6iV4)
 
 **Goal: Maximum Conservation of Value**
