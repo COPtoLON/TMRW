@@ -1,4 +1,16 @@
+# Model - Market
 
+# Model - Trader
+
+## Overall model
+
+## multi-layer AI
+
+## Signal A
+
+## Signal B
+
+## Signal C
 Expectations & Scenario Analysis
 
 Core assumptions about market trends: bull/bear cycles, sector rotations.
