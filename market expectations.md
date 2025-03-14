@@ -14,7 +14,14 @@ TO add to this, there ought to be considerations associated with the market part
 This will help associate whether the company expects to have to change their market participation state (Neutral, defense, attack, counter) often, or sparsely
 
 ## Operations considerations
-There is a large range of possible actions in the market
+There is a large range of possible actions in the market, these will be considered as operations.
+- One can buy and hold, this is called going long
+- One can borrow and sell an asset, this is called shorting
+- One can buy options, futures or swaps with regards to a positions, in this way strategic implementations of positions can be taken into account
+- One can buy an asset in one exchange and sell it higher in another exchange, in this way benefitting from differences in exchanges.
+- One can borrow money, to perform the previous actions, this is called leveraging
+- One can propose bid or ask prices in the market, in this way building an expectation of what the other market participants think of certain prices
+- ...
 
 ## Participants
 In respect to participants, a general consideration will be that some participants can be easily observed, some may be less observable.
@@ -69,21 +76,6 @@ Citadel might “own the playing field” through broad market participation, ty
 Other funds may focus on volatility or on absorbing mispriced risk from weaker strategies.\
 Despite nuanced differences, all of these perspectives can be placed under an umbrella of large-population, strategic decision-making, a natural setting for mean-field games.
 
-## Key Components for a Trading Algorithm
-Any well-considered trading algorithm must incorporate several elements:
-
-### Predictions and Conditional Logic
-The algorithm should have predictive capabilities (forecasting future market behavior) and conditional logic to adapt to specific scenarios.
-
-### Risk Measurements and Statistical Considerations
-Risk management and modeling of potential losses are essential. A robust design contemplates the probability of being wrong and prescribes adjustments—e.g., scaling down positions.
-
-### Strategic Framework
-Deciding how and when to use derivatives, short selling, or other asset allocations requires a structured policy. The algorithm should recognize when and how to influence or “push” the market.
-
-### Incorporation of Human Behavior
-Although quantitative in nature, any algorithm benefits from considering behavioral finance aspects—e.g., herding, panic selling, or FOMO (fear of missing out)—that can dominate at certain times.
-
 ## Mean-Field Game Theory
 Mean-field game (MFG) theory studies how strategic decision-making unfolds among many “small” agents in a large population. Each agent’s individual influence on the system is negligible, yet collectively these agents drive its overall dynamics. The term “mean field” is borrowed from physics, where the behavior of large systems can often be approximated by examining one representative particle in an “average” field created by the others.
 
@@ -117,3 +109,6 @@ Here:
 - $m(t)$ is the distribution of agent states at time
 - $\nu$ is a diffusion coefficient (or viscosity parameter).
 - $H$ is the Hamiltonian encoding the running cost and dynamics, while $G$ is a terminal cost functional.
+
+
+
