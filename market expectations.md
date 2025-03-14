@@ -56,7 +56,7 @@ Our initial modeling approach involved mean-field theory—particularly particle
 
 - **Changing Number of Participants** – Standard mean-field models typically assume a fixed number of agents, whereas real markets involve participants entering or exiting.
 - **Heterogeneous Variables** – Agents in actual markets may have different sets of state variables; classical mean-field frameworks often assume uniformity.
-- **Information Disparities** – The distribution and quality of information accessible to each participant can vary significantly.
+- **Information Disparities** – The distribution and quality of information accessible to each participant can vary significantly. Current mean field theory assumes either complete market information or no market information.
 - **Clustering Effects** – Participants may form subgroups or clusters with correlated behaviors, which remain unaccounted for in many mean-field approaches.
 
 These gaps underscore the need for a more robust, flexible model that accommodates varying population sizes, heterogeneous agent states, and diverse information channels.
