@@ -23,18 +23,22 @@ The following parts are pieces to the model we expect to use as an approximation
 
 ## Overall model
 
-### Market states
+## Predictions & Conditional Logical
 
+1. **Statistics** - such as stationarity, regularity, autocorrelations
+2. **Market states** - markov etc.
+3. **Conditionals** - if UUU, then % chance of D?
 
-## multi-layer AI
+## Risk measurements & Statistical considerations
 
-### Strategist bot
+1. VaR, CVaR, Entropy, etc.
+2. backtesting risks
+3. Statistical certainties
+4. Model accuracies
 
-### Portfolio bot
+## binomial model or multinomial model on correct moves
 
-### Risk bot
-
-### validation bot
+## deterministic model on such things as FOMO, resistance levels etc.
 
 ## Signal A
 
@@ -98,10 +102,6 @@ Portfolio allocation best practices: weighting schemes, rebalancing frequency.
 Integrations with each algorithmic strategy (cross-referenced to the “Algorithmic Strategies” document).
 
 
-## Concluding Thoughts
-Mean-field games blend ideas from game theory, stochastic processes, and control theory. Their strength lies in managing large-agent systems where each agent’s individual impact is small, but collectively significant. In trading contexts—like those faced by hedge funds (Jane Street, Two Sigma, Citadel, etc.)—the MFG framework can help reason about the interplay between a single agent’s optimal strategy and the aggregate market behavior.
-
-By clarifying the ideas of market dynamics, game-theoretic interactions, and advanced modeling (through PDEs or branching processes), one can more rigorously capture how agents attempt to maximize their outcomes under uncertainty, competition, and continuous adaptation.
 
 Financial Markets
 
@@ -117,32 +117,3 @@ Branching Scenarios
 
 Population Growth or Exit/Entry Models: Agents “branch” (e.g., a firm splits into subsidiaries) or leave (exit the market). This modifies the equations to handle time-varying population counts.
 
-
-
-
-
-
-
-# Company Trading Algorithm
-Any good and thought-through trading algorithm must have some considerations on the following:
-- Predictions and conditional logic based on scenarios, a good algorithm, has some predictive properties and some conditional logic properties. Being able to discern some scenarios from others.
-- Risk measurements and statistical considerations, to be able to consider the possibilities of being wrong and what to do if such a case occurs.
-- A genuine strategical framework, so as to know when to set up derivatives, when to short, go long or when to actively push the market.
-
-A genuine trading algorithm, must also know human behaviour. To be able to consider when to be active or passive. When to switch strategies.
-
-
-## Key Components for a Trading Algorithm
-Any well-considered trading algorithm must incorporate several elements:
-
-### Predictions and Conditional Logic
-The algorithm should have predictive capabilities (forecasting future market behavior) and conditional logic to adapt to specific scenarios.
-
-### Risk Measurements and Statistical Considerations
-Risk management and modeling of potential losses are essential. A robust design contemplates the probability of being wrong and prescribes adjustments—e.g., scaling down positions.
-
-### Strategic Framework
-Deciding how and when to use derivatives, short selling, or other asset allocations requires a structured policy. The algorithm should recognize when and how to influence or “push” the market.
-
-### Incorporation of Human Behavior
-Although quantitative in nature, any algorithm benefits from considering behavioral finance aspects—e.g., herding, panic selling, or FOMO (fear of missing out)—that can dominate at certain times.
