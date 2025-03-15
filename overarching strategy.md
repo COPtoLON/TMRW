@@ -25,30 +25,42 @@ The following parts are pieces to the model we expect to use as an approximation
 
 ![Model](https://github.com/COPtoLON/TMRW/blob/2da41e162ce04c25e83712f98d1caf6d9217e76d/util/model.jpg)
 
-## Predictions & Conditional Logical
+## Data
+
+## Features
+
+
+## Statistics AI
 
 1. **Statistics** - such as stationarity, regularity, autocorrelations
 2. **Market states** - markov etc.
 3. **Conditionals** - if UUU, then % chance of D?
 
-## Risk measurements & Statistical considerations
+## Risk AI
 
 1. VaR, CVaR, Entropy, etc.
 2. backtesting risks
 3. Statistical certainties
 4. Model accuracies
 
-## binomial model or multinomial model on correct moves
+## Strategy AI
 
-## deterministic model on such things as FOMO, resistance levels etc.
+### Reinforcement learning 1
 
-## Signal A
+### Reinforcement learning 2
+
+### Reinforcement learning 3
+
+### Signal A
+
+### Signal B
+
+### Signal C
 
 
-## Signal B
+## Forecasting AI
 
 
-## Signal C
 
 ## Execution
 Expectations & Scenario Analysis
