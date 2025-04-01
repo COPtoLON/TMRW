@@ -35,6 +35,10 @@ The model operates across four layers, each with distinct time frames, objective
   - Position goal ≈ 0 at all times to minimize overnight risk.
   - Focus on liquidity provision and capturing small, repeated profits.
 
+**focus:** Execution speed, profit-taking
+**Main Strategies:** Market-making, statistical arbitrage
+
+
 ## Layer 2 - Short
 - Time Horizon: A few minutes up to a few days.
 - Inventory: small in direction
@@ -46,6 +50,9 @@ The model operates across four layers, each with distinct time frames, objective
   - Higher frequency than long-horizon, but less than HFT.
   - Trades or holds positions for short windows to capitalize on rapid but not instantaneous market moves.
 
+**focus:** AI predictions, volatility management
+**Main Strategies:** Mean-reversion, volatility trading
+
 ## Layer 3 - Medium
 - Time Horizon: A few days up to a few weeks.
 - Inventory: medium in direction
@@ -56,6 +63,9 @@ The model operates across four layers, each with distinct time frames, objective
   - Larger position sizes than short-term strategies, depending on broader market or sector trends.
   - More thorough risk analytics, including macro factors and cross-asset correlations.
 
+**focus:** Trend analysis, risk scaling
+**Main Strategies:** mean-reversion, volatility, trend-following
+
 ## Layer 4 - Long
 - Time Horizon: A few weeks to multiple years.
 - Inventory: Large + on valuable assets
@@ -65,6 +75,9 @@ The model operates across four layers, each with distinct time frames, objective
 - Key Traits:
   - Typically directional, either net long or net short.
   - Focus on deep fundamental analysis, Macro level investing, and possibly ESG or large-scale portfolio constraints.
+
+**focus:** Long-term valuation, economic cycle
+**Main Strategies:** Fundamental analysis, macroeconomic trends
 
 ## Layer 5 - Eons
 Notes coming
