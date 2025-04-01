@@ -24,6 +24,7 @@ The model operates across four layers, each with distinct time frames, objective
 
 ## Layer 1 - HFT
 - Time Horizon: Sub-seconds to a few seconds/minutes.
+- Inventory: - 0
 - Objectives:
   - Market-making; capturing bid–ask spread.
   - Statistical arbitrage with a near-zero net position target.
@@ -35,6 +36,7 @@ The model operates across four layers, each with distinct time frames, objective
 
 ## Layer 2 - Short
 - Time Horizon: A few minutes up to a few days.
+- Inventory: small in direction
 - Objectives:
   - Mean reversion.
   - Short-term volatility trading (e.g., trading around expected earnings announcements, news catalysts, or technical signals).
@@ -45,6 +47,7 @@ The model operates across four layers, each with distinct time frames, objective
 
 ## Layer 3 - Medium
 - Time Horizon: A few days up to a few weeks.
+- Inventory: medium in direction
 - Objectives:
   - Mean reversion on longer cycles (e.g., cyclical trends, seasonal patterns).
   - Volatility trading on macro events (e.g., central bank announcements).
@@ -54,6 +57,7 @@ The model operates across four layers, each with distinct time frames, objective
 
 ## Layer 4 - Long
 - Time Horizon: A few weeks to multiple years.
+- Inventory: Large + on valuable assets
 - Objectives:
   - Thematic or fundamental investing (a la Bridgewater, Warren Buffett).
   - Accumulation of strategic positions for fundamental value or macro growth.
