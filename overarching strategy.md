@@ -29,6 +29,7 @@ The model operates across four layers, each with distinct time frames, objective
   - Market-making; capturing bid–ask spread.
   - Statistical arbitrage with a near-zero net position target.
   - Fine-grained order-execution tactics, exploiting microstructure.
+  - IPO arbitration
 - Key Traits:
   - Extremely fast decision-making.
   - Position goal ≈ 0 at all times to minimize overnight risk.
