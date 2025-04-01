@@ -37,7 +37,7 @@ The model operates across four layers, each with distinct time frames, objective
 
 **focus:** Execution speed, profit-taking
 **Main Strategies:** Market-making, statistical arbitrage
-
+**Note: Consider MFGs for this**
 
 ## Layer 2 - Short
 - Time Horizon: A few minutes up to a few days.
@@ -52,6 +52,7 @@ The model operates across four layers, each with distinct time frames, objective
 
 **focus:** AI predictions, volatility management
 **Main Strategies:** Mean-reversion, volatility trading
+**Note: Consider AI, regime detect, etc.**
 
 ## Layer 3 - Medium
 - Time Horizon: A few days up to a few weeks.
@@ -65,6 +66,7 @@ The model operates across four layers, each with distinct time frames, objective
 
 **focus:** Trend analysis, risk scaling
 **Main Strategies:** mean-reversion, volatility, trend-following
+**Note: Consider AI, regime detect, etc.**
 
 ## Layer 4 - Long
 - Time Horizon: A few weeks to multiple years.
@@ -78,6 +80,7 @@ The model operates across four layers, each with distinct time frames, objective
 
 **focus:** Long-term valuation, economic cycle
 **Main Strategies:** Fundamental analysis, macroeconomic trends
+**Note: Consider AI, regime detect, etc.**
 
 ## Layer 5 - Eons
 Notes coming
