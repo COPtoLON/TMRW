@@ -17,7 +17,7 @@ The overall market is an accumulation of the individual agents playing together 
 - **Agent State** - Each agent therefore has an internal state, where both market behaviour and internal behaviour is taken into consideration.
 
 
-# Model - Hierarchically Layered Time-Frame Architecture
+# Hierarchically Layered Time-Frame Architecture
 The guiding idea is to separate trading strategies by time horizon and then align them so each layer can reinforce or hedge the others. Hierarchically layered framework that integrates multiple time frames and strategies to optimize trading performance. 
 The concept behind this model is based on mean field games (MFG)
 The model operates across four layers, each with distinct time frames, objectives, risk parameters, and predictive logic. Below is the structured plan.
@@ -77,18 +77,6 @@ Notes coming
 
 ## Overall model
 ![Model](https://github.com/COPtoLON/TMRW/blob/2da41e162ce04c25e83712f98d1caf6d9217e76d/util/model.jpg)
-
-# Model version 2.
-- **Layer 1 - HFT**
-  - Ultra low frequency - Market-making, Statistical arbitrage, etc. : position goal = 0
-- **Layer 2 - short**
-  - Short( a few minutes up to a few days) - Mean-reversion, volatility trading? : Position goal = +- x
-- **Layer 3 - Medium**
-  - Medium( a day to a few weeks) - Mean-reversion, volatility trading? : Position goal = +- x
-- **Layer 4 - Long**
-  - Long( a few weeks to years) - bridgewater associates? Warren buffett? Long: Position goal = +- x
-
-**Run prediction + risk + ai stuff on the short to long time frames, run only taking profit on the HFT time frames?**
 
 Expectations & Scenario Analysis
 
