@@ -34,7 +34,7 @@ Certain areas remain under-optimized or heavily contested, presenting opportunit
 - **Strategic Decision-Making** – Informed, agile approaches that leverage real-time data for competitive advantage.
 These edges represent our potential pathways to outperformance. By focusing on innovation in speed, predictive power, and flexible execution, we aim to thrive in a competitive market landscape.
 
-# Model
+# Market Model
 By integrating these considerations, we approximate a model for the markets in which we operate. We anticipate that any such market will exhibit the following characteristics:
 
 1. **Value Functions** - Either a single function capturing the overall market value or several functions reflecting the value of individual participants.
@@ -42,7 +42,7 @@ By integrating these considerations, we approximate a model for the markets in w
 3. **States & Variables** - Every participant carries a “state,” comprised of one or more variables that influence or determine their impact on outcomes.
 4. **Market & Participant Variables** - A set of parameters or inputs shaping both the market’s collective behavior and the participants’ decision-making processes.
 5. **External Events** - A mechanism that introduces exogenous shocks—such as major news or policy changes—affecting market conditions over time.
-6. **Dynamic Functions** - Functions that govern market-specific aspects, such as transaction costs, liquidity, or general price and flow dynamics.
+6. **Market Dynamics** - Functions that govern market-specific aspects, such as transaction costs, liquidity, or general price and flow dynamics.
 
 ### Limitations of Mean-Field Models
 Our initial modeling approach involved mean-field theory—particularly particle systems and mean-field games—to simulate market participants trading an asset. However, we found these methods insufficient for capturing the full range of real-world market behavior. As highlighted in a lecture by Daniel Lacker:
