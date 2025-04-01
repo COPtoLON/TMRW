@@ -24,7 +24,7 @@ The model operates across four layers, each with distinct time frames, objective
 
 ## Layer 1 - HFT
 - Time Horizon: Sub-seconds to a few seconds/minutes.
-- Inventory: - 0
+- Inventory: 0
 - Objectives:
   - Market-making; capturing bid–ask spread.
   - Statistical arbitrage with a near-zero net position target.
