@@ -1,19 +1,25 @@
 # Model - Market
-The following parts are pieces to the model we expect to use as an approximation to the markets in which we operate.:
-- **Market**
-  - **Market variables** -  transaction costs, opening/closing times, date, execution delay, maximum orders per day, etc.
-  - **Market State** - A summary of the agents behaviour and the market value history makes the market state
-- **Agents** - A collection of market participants or agents, each having corresponding information
-  - **Agent goals** - Each agent has a goal aiming to extract and maximize value from the market. 
-  - **Agent dynamics** - Each agent can perform a range of actions, each agent has a relationship to the other agents, and an information coefficient, there will be considerations on agent sizes
-  - **Agent variables** - Each agent has a resistance to other agents, a consideration on the correct price range and an opinion of which direction the price should move, they also have a trading book(money in the bank, portfolio, etc.)
-  - **Agent State** - some of these variables and dynamics summarize to a state for the agent.
-- **Overall dynamics**
-  - **Value Functions** - Either a single function capturing the overall market value or several functions reflecting the value of individual participants.
-  - **External Events** - A mechanism that introduces exogenous shocks—such as major news or policy changes—affecting market conditions over time.
-  - **Dynamic Functions** - Functions that govern market-specific aspects, such as transaction costs, liquidity, or general price and flow dynamics.
+The overall market is an accumulation of the individual agents playing together around a baseline value of a company. The market is represented by the following.
+- **Market intrinsic value** - a baseline value of the asset being trading in the market, for stocks, that could be the undeniable value of a company's equity.
+- **Market value function** - A single function/time path capturing the overall market value as proposed in unison by all the agents in the market. This will most likely change over time and is the sole reason why we're doing this. To trade and earn on the changes of the value of assets in financial markets.
+- **Market variables** -  transaction costs, opening/closing times, date, execution delay, maximum orders per day, etc.
+- **Market State** - A summary of the agents behaviour and the market value history makes the market state. It can be trending up, down or sideways, it can be volatile or stable.
+- **Market dynamics** - Returning behaviours, such as W shapes, limits, seasonalities, reactions to market news...
+- **External events** - news, FED actions, catastrophies, political events... A mechanism that introduces exogenous shocks—such as major news or policy changes—affecting market conditions over time.
 
-# Model - Trader
+# Model - Agent
+- **Agent goals** - Each agent has a goal aiming to extract and maximize value from the market.
+- **Agent market share** - Each agent can measure its value by a combined measurement of current piece value and the agents share of the market.
+- **Agent value function** - market share times market piece value, a single function reflecting the value of the individual participant's share value. the sum of all the pieces is the value of the market.
+- **Agent dynamics** - Each agent can perform a range of actions, each agent has a relationship to the other agents, and an information coefficient, there will be considerations on agent sizes
+- **Agent variables** - Each agent has a resistance to the information and actions of other agents, each agent has a consideration on the correct price range and an opinion of which direction the price should move, they also have a trading book(money in the bank, portfolio, etc.) and a take-profit and stop-loss value.
+- **External Events** - External events, that affect the agent also occur, some agents may or may not be affected by market external events, but some agents may also be affected by external events unique for that particular agent.
+- **Agent State** - Each agent therefore has an internal state, where both market behaviour and internal behaviour is taken into consideration.
+
+
+
+# Model Version 1.
+
 **Key Components for a Trading Algorithm**, Any well-considered trading model must incorporate several elements:
 - **Predictions and Conditional Logic** - The algorithm should have predictive capabilities (forecasting future market behavior) and conditional logic to adapt to specific scenarios.
 - **Risk Measurements and Statistical Considerations** - Risk management and modeling of potential losses are essential. A robust design contemplates the probability of being wrong and prescribes adjustments—e.g., scaling down positions.
@@ -22,47 +28,20 @@ The following parts are pieces to the model we expect to use as an approximation
 - **Execution methodology** - sometimes no consideration what so ever about strategy, predictions or risks can still lead to profit, if the execution of a basic idea is immaculate. If I want the price to go up, so I can sell. I may implement an execution method to push the bid or ask prices up.
 
 ## Overall model
-
 ![Model](https://github.com/COPtoLON/TMRW/blob/2da41e162ce04c25e83712f98d1caf6d9217e76d/util/model.jpg)
 
-## Data
+# Model version 2.
+- **Layer 1 - HFT**
+  - Ultra low frequency - Market-making, Statistical arbitrage, etc. : position goal = 0
+- **Layer 2 - short**
+  - Short( a few minutes up to a few days) - Mean-reversion, volatility trading? : Position goal = +- x
+- **Layer 3 - Medium**
+  - Medium( a day to a few weeks) - Mean-reversion, volatility trading? : Position goal = +- x
+- **Layer 4 - Long**
+  - Long( a few weeks to years) - bridgewater associates? Warren buffett? Long: Position goal = +- x
 
-## Features
+**Run prediction + risk + ai stuff on the short to long time frames, run only taking profit on the HFT time frames?**
 
-
-## Statistics AI
-
-1. **Statistics** - such as stationarity, regularity, autocorrelations
-2. **Market states** - markov etc.
-3. **Conditionals** - if UUU, then % chance of D?
-
-## Risk AI
-
-1. VaR, CVaR, Entropy, etc.
-2. backtesting risks
-3. Statistical certainties
-4. Model accuracies
-
-## Strategy AI
-
-### Reinforcement learning 1
-
-### Reinforcement learning 2
-
-### Reinforcement learning 3
-
-### Signal A
-
-### Signal B
-
-### Signal C
-
-
-## Forecasting AI
-
-
-
-## Execution
 Expectations & Scenario Analysis
 
 Core assumptions about market trends: bull/bear cycles, sector rotations.
