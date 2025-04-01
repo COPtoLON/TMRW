@@ -17,6 +17,54 @@ The overall market is an accumulation of the individual agents playing together 
 - **Agent State** - Each agent therefore has an internal state, where both market behaviour and internal behaviour is taken into consideration.
 
 
+# Model - Hierarchically Layered Time-Frame Architecture
+The guiding idea is to separate trading strategies by time horizon and then align them so each layer can reinforce or hedge the others. Hierarchically layered framework that integrates multiple time frames and strategies to optimize trading performance. 
+The concept behind this model is based on mean field games (MFG)
+The model operates across four layers, each with distinct time frames, objectives, risk parameters, and predictive logic. Below is the structured plan.
+
+## Layer 1 - HFT
+- Time Horizon: Sub-seconds to a few seconds/minutes.
+- Objectives:
+  - Market-making; capturing bid–ask spread.
+  - Statistical arbitrage with a near-zero net position target.
+  - Fine-grained order-execution tactics, exploiting microstructure.
+- Key Traits:
+  - Extremely fast decision-making.
+  - Position goal ≈ 0 at all times to minimize overnight risk.
+  - Focus on liquidity provision and capturing small, repeated profits.
+
+## Layer 2 - Short
+- Time Horizon: A few minutes up to a few days.
+- Objectives:
+  - Mean reversion.
+  - Short-term volatility trading (e.g., trading around expected earnings announcements, news catalysts, or technical signals).
+- Key Traits:
+  - Position goal ≠ 0, but still relatively small.
+  - Higher frequency than long-horizon, but less than HFT.
+  - Trades or holds positions for short windows to capitalize on rapid but not instantaneous market moves.
+
+## Layer 3 - Medium
+- Time Horizon: A few days up to a few weeks.
+- Objectives:
+  - Mean reversion on longer cycles (e.g., cyclical trends, seasonal patterns).
+  - Volatility trading on macro events (e.g., central bank announcements).
+- Key Traits:
+  - Larger position sizes than short-term strategies, depending on broader market or sector trends.
+  - More thorough risk analytics, including macro factors and cross-asset correlations.
+
+## Layer 4 - Long
+- Time Horizon: A few weeks to multiple years.
+- Objectives:
+  - Thematic or fundamental investing (a la Bridgewater, Warren Buffett).
+  - Accumulation of strategic positions for fundamental value or macro growth.
+- Key Traits:
+  - Typically directional, either net long or net short.
+  - Focus on deep fundamental analysis, Macro level investing, and possibly ESG or large-scale portfolio constraints.
+
+## Layer 5 - Eons
+Notes coming
+
+
 
 # Model Version 1.
 
