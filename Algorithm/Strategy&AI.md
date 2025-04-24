@@ -1,7 +1,7 @@
 
 
 
-# Strategy 1:
+# Strategy 1: Medium-term (day to month)
 
 ## Current state
 
