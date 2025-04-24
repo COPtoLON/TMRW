@@ -1,4 +1,7 @@
-
+minimer konserveret energy? maximer entropi?
+Følg alle paths, information er givet i markedet.
+probabilistic/statistic løsning, dynamikker
+action: maximum utility
 
 
 # Strategy 1: Medium-term (day to month)
