@@ -2,6 +2,7 @@
 
 
 # Strategy 1: Medium-term (day to month)
+<br>
 
 ## Current state - o
 - develop engine to correctly estimate current market state, based on history
