@@ -9,9 +9,9 @@
 - Run model 2 on hard logic
 
 ## predict next state - o
-**1**: Based on hard logic/dynamics
-**2**: Based on stat/ML/RL
-**3**: set up a risk engine
+**1**: Based on hard logic/dynamics \
+**2**: Based on stat/ML/RL \
+**3**: set up a risk engine 
 
 ## mitigate risk - dunno yet
 
