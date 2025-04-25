@@ -9,6 +9,8 @@ action: maximum utility
 
 ## Current state - o
 - develop engine to correctly estimate current market state, based on history
+  - volatility state
+  - momentum/trend state
 - Run model 1 on statistics/ML/RL
 - Run model 2 on hard logic
 <br>
