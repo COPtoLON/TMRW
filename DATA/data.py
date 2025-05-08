@@ -12,7 +12,10 @@ client = RESTClient(api_key=api_key, api_secret=api_secret)
 # username: mark@brezina.dk
 # password: Ink-wire123x
 
-
+from kraken.spot import SpotClient
+key = "wwNo7XJL0OmK+iUpCUURdQakcohPuEwSYHMjLmqvtoKa2t2HG8qh4zIK"
+secret = "murQoy7j9EUtGYDDwEY4KTl5f0nQdOer+bwdwm8Ybn2gsR44ol1nIV0cco5+xK5dcMfU4QCHmR5ea3LAE5ucVA=="
+client.request("GET", "/0/public/Ticker?pair=XBTUSDC")
 
 
 
