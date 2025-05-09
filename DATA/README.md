@@ -8,3 +8,6 @@ Exchanges - while in the UK:
 - [ ] Binance
 - [ ] ByBit
 - [ ] ...
+
+*ad-hoc smaller exchanges?*
+- [ ] Pump.fun
