@@ -5,3 +5,6 @@ Exchanges - while in the UK:
 
 
 *Try to build up some kind of network for connecting via denmark to other exchanges*
+- [ ] Binance
+- [ ] ByBit
+- [ ] ...
