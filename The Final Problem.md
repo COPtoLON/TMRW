@@ -1,4 +1,4 @@
-# test
+# Main
 
 We formalize the system as follows. Let $t=0,1,2,\dots$ be discrete time steps. The environment consists of (1) a set of hierarchical rules governing dynamics and constraints, (2) a time-varying graph $G(t)=(V,E(t))$ whose edges represent moving objects (or “particles”) in the system, (3) a discretized geometrical surface (e.g. a spatial lattice or mesh) on which values and fields evolve (modeled with multiple layers), and (4) a set of agents with states and utility functions. We describe each in turn.
 Rules Hierarchy: We assume a structured set of rules $\mathcal{R}$ (e.g. invariants, probabilistic transition rules, constraints) at multiple tiers. For example, Tier 1 rules might enforce conservation laws or feasibility constraints, Tier 2 rules govern probabilistic state transitions (e.g. if event $E$ occurs, object state updates according to distribution $P(\cdot|E)$), and Tier 3 rules define outcomes of interactions among objects or agents. Such hierarchical, rule-based environments have been studied in agent-based modeling (e.g. Lotzmann & Meyer’s declarative rule‐based agent models
