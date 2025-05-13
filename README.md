@@ -21,8 +21,7 @@ Scalable IT infrastructure and architecture to support algorithmic trading opera
 Real-time data pipelines integrating multiple APIs and databases covering diverse data flows and asset classes like crypto and equities10....
 •
 Exploring and refining profitable trading algorithms through in-depth statistical and financial research12.
-Focusing on TMRW provides hands-on experience across the entire lifecycle of developing and deploying algorithmic trading strategies, from data ingestion and modeling to execution and infrastructure10.... This comprehensive approach is highly valuable for quantitative strategist and researcher roles, demonstrating the ability to translate theoretical ideas into working systems and manage them effectively in a live trading environment13.![image](https://github.com/user-attachments/assets/a3544199-41b1-48a1-88a0-a33db78869bf)
-
+Focusing on TMRW provides hands-on experience across the entire lifecycle of developing and deploying algorithmic trading strategies, from data ingestion and modeling to execution and infrastructure10.... This comprehensive approach is highly valuable for quantitative strategist and researcher roles, demonstrating the ability to translate theoretical ideas into working systems and manage them effectively in a live trading environment13.
 
 
 
