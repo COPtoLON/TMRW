@@ -1,0 +1,33 @@
+Help me with the writing for this:
+
+A Mathematical Framework, the framework evolves in time. Having these components
+
+	- At the top of the framework is a set of rules. A value function, a loss function, certain dynamics like 
+
+Rule 1: "if an agent performs A action then B will be more likely or certain", 
+Rule 2: "If an edge in the network is disconnected and alone, there will be no interacting with other edges",
+Rule 3: "If the surface ripples it will take x amount of time for it to stabilize", 
+Rule 4:"An agents interaction with Edge Z, will cost an amount x and return an amount y, in t timesteps"
+	… 
+There may be many more rules, for which I have yet to specify precisely.
+
+	- Then a graph(graph theory) linking together edges, representing abstract particles or objects. 
+Each edge has a set of variables(timestep, x, y, z, inner_value, type, properties, etc..) 
+The properties represented in the variables indicates what rules are attached to the edge.
+
+To attach to this, there are also indications of strength of connectivity between the edges, like edge 1 may be intimately linked to edge 2, but weakly connected to edge 3 or 5. With edge 2 being intimately connected with edge 1 and 4, but weakly connected to edge 3 and 5 as well.
+
+	- There is a geometrical surface, with curvature, each point on the surface has a set of values corresponding to the points, the points are attached to the edges on the graph network. Though the geometrical surface is supposed to represent paths in time for the graph, while the graph is simply supposed to represent information, connectivity and variables. The geometrical surface represents the time-evolving behaviour of the framework. Where holes/singularities may occur, where both the time-varying behaviour of something such as value, loss, interactivity and dynamics may be represented properly for the next steps of the framework.
+
+The geometrical surface can be divided up into layers.
+The 1. Layer is exactly the graph network represented as the previous component, where inner_value is the value of the coordinate of the geometrical surface.
+The 2. Layer is an attached "re-evaluation" based on a small set of rules on demand from the agents.
+	The 3. Layer is an "event,information, propagation" layer, where sudden events affecting each point on the surface, may change the value of that particular point, mostly giving rise to significant changes in the value, but this may also give rise to sudden holes or abrupt changes in the properties of this point on the graph and geometrical surface.
+	The 4. Layer is the "interaction" layer, where agents continuously compete, interact and inform both the layer, graph and each other of the value of the point. Here agents buy/sell, bid/ask, and interchange on the point.
+
+	- A range of agents, with an associated set of variables. performing actions and interacting with the above mentioned components.
+Each agent tries to maximize its expected utility, in order to in reality maximize value and minimize loss. The agents are subject to a set of rules, noted in the general rule set. But some agents also attach extra rules based on the properties, associated in the set of variables of the agent. 
+Some agents may also be connected in groups, associating their actions and variables to be linked in some manner.
+The agents spread information of their actions, variables, value and loss in some varying manner, depending on their connectivities. Some interactions between agents may lead to mutually negative results, despite each agent having benefit on their own, leading to a kind of complex variable interaction dynamic, where two positives become a negative.
+
+There is a sort of aggregation mechanic occuring along the lines, where at random scales, the self-similarity of some parts of the framework compounds to other outcomes.
