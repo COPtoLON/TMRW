@@ -1,3 +1,7 @@
+# This work is on hold for a while.
+
+
+
 # Strategy 1: Medium-term (day to month)
 <br>
 
@@ -17,6 +21,7 @@
 <br>
 
 ## mitigate risk - dunno yet
+
 <br>
 
 ## propose actions - o
