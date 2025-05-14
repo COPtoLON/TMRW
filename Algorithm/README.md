@@ -1,3 +1,5 @@
+# This work is on hold for a while
+
 Each strategy is broken down into its own section, but the structure is consistent so everyone in the team knows exactly where to find specific details.
 
 Strategy Overview
