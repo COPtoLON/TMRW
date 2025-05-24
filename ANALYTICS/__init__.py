@@ -568,3 +568,128 @@ def sharpe(self,x):
     #s=(growth_rate-risk_free)/v[0]
 
     #return s
+
+
+
+
+
+def UD_ind(data):
+    """
+    """
+    result = pd.DataFrame()
+    result['returns'] = data
+    
+    lst = ["","","",""]
+
+    for i in range(4,len(data)):
+
+        st = ""
+
+        if data[i-3] < 0:
+            st = "D"
+        elif data[i-3] >= 0:
+            st = "U"
+
+        if data[i-2] < 0:
+            st = st + "D"
+        elif data[i-2] >= 0:
+            st = st + "U"
+
+        if data[i-1] < 0:
+            st = st +"D"
+        elif data[i-1] >= 0:
+            st = st + "U"
+
+        lst.append(st)
+
+    result['UD3indicator'] = lst
+
+    lst = ["", "", "", "", ""]
+
+    for i in range(5,len(data)):
+
+        st = ""
+
+        if data.iloc[i-5] < 0:
+            st = "D"
+        elif data.iloc[i-5] >= 0:
+            st = "U"
+
+        if data.iloc[i-4] < 0:
+            st = st + "D"
+        elif data.iloc[i-4] >= 0:
+            st = st + "U"
+
+        if data.iloc[i-3] < 0:
+            st = st +"D"
+        elif data.iloc[i-3] >= 0:
+            st = st + "U"
+
+        if data.iloc[i-2] < 0:
+            st = st +"D"
+        elif data.iloc[i-2] >= 0:
+            st = st +"U"
+
+        if data.iloc[i-1] < 0:
+            st = st + "D"
+        elif data.iloc[i-1] >= 0:
+            st = st + "U"
+
+        lst.append(st)
+
+    result['UD5indicator'] = lst
+    
+    return(result)
+
+def trend_ind(data):
+    """
+    """
+    assert data.columns[3] == "Close"
+    assert data.columns[7] == "velocity"
+
+    result = data.copy()
+    Trend = [None] * len(result)
+    for i in range(21, len(result)):
+        Trend[i] = tm.mk_test(result['Close'][i-21:i], 'full', window = 21)[0]
+    
+    Trend2 = [None] * len(result)
+    for i in range(21, len(result)):
+        t_ind = np.mean(result['velocity'][i-21:i]) * 100
+        if t_ind < -0.5:
+            Trend2[i] = "decreasing"
+        elif t_ind > 0.5:
+            Trend2[i] = "increasing"
+        else:
+            Trend2[i] = "no trend"     
+    result = pd.DataFrame([Trend, Trend2]).T
+    return(result)
+
+def hidden_states(data):
+    data = data.dropna()
+    data.replace([np.inf, -np.inf, np.nan], 1, inplace=True)
+
+    close = np.array(data.iloc[1:,3])
+    vel = np.array(data.iloc[1:,7])
+    acc = np.array(data.iloc[1:,8])
+    vol = np.array(data.iloc[1:,4])
+    vol_vel = np.array(data.iloc[1:,9])
+    vol_acc = np.array(data.iloc[1:,10])
+
+
+    RSI = np.array(data.iloc[1:,11])
+    MA3 = np.array(data.iloc[1:,13])
+    STD3 = np.array(data.iloc[1:,14])
+    MA5 = np.array(data.iloc[1:,18])
+    STD5 = np.array(data.iloc[1:,19])
+    MA10 = np.array(data.iloc[1:,23])
+    STD10 = np.array(data.iloc[1:,24])
+    MA60 = np.array(data.iloc[1:,38])
+    STD60 = np.array(data.iloc[1:,39])
+
+
+    X = np.column_stack([close, vel, acc, vol, vol_vel, vol_acc, RSI, MA3, STD3, MA5, STD5, MA10, STD10, MA60, STD60])
+    model = GaussianHMM(n_components=6, covariance_type="diag", n_iter=10000, random_state = 123).fit(X)
+    hidden_states = model.predict(X)
+    data = data.iloc[1:,:]
+    data['States'] = hidden_states
+    return(data)
