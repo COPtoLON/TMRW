@@ -207,3 +207,364 @@ def vwstd(data, weights, window = 20):
     df = pd.DataFrame(vws)
     return(df)
 
+
+
+###############################################################################
+#                        Technical indicators
+#                        RSI, Stochastic Oscillator
+#
+###############################################################################
+
+def RSI(data, window = 20):
+    """
+    
+    """
+    delta = data.diff().dropna() # Close_now - Close_yesterday
+    delta = delta.reset_index(drop = True)
+
+    u = pd.DataFrame(np.zeros(len(delta))) # make an array of 0s for the up returns
+    u = u[0]
+    d = u.copy() # make an array of 0s for the down returns   
+
+    u[delta > 0] = delta[delta > 0] # for all the days where delta is up, transfer them to U
+    d[delta < 0] = -delta[delta < 0] # for all the days where delta is down, transfer them to D
+
+    u[u.index[window-1]] = np.mean( u[:window] ) #first value is sum of avg gains
+    u = u.drop(u.index[:(window-1)]) #drop the days before the window opens
+
+    d[d.index[window-1]] = np.mean( d[:window] ) #first value is sum of avg losses
+    d = d.drop(d.index[:(window-1)]) #drop the days before the window opens
+
+    RS = pd.DataFrame.ewm(u, com=window-1, adjust=False).mean() / pd.DataFrame.ewm(d, com=window-1, adjust=False).mean() # EMA(up) / EMA(down)
+
+    RSI_ = 100 - (100 / (1 + RS))
+    return(RSI_)
+
+def FRSI(data, window = 20):
+    """
+    inverse fisher transform on RSI = 0.1*(rsi-50)
+    fisher rsi = (np.exp(2*rsi)-1) / (np.exp(2*rsi)+1)
+    """
+    
+    RSI_ = 0.1 * (RSI(data, window) - 50)
+    F_RSI = (np.exp(2*RSI_)-1) / (np.exp(2*RSI_)+1)
+    return(F_RSI)
+
+def BB(data, window = 20, std = 2.5):
+    """
+    
+    """
+    mean_lst = np.zeros(len(data))
+    std_lst = np.zeros(len(data))
+    for i in range(0, window):
+        mean_lst[i] = data[i]
+        std_lst[i] = 0.05 * data[i]
+    
+    for i in range(window,len(data)):
+        mean_lst[i] = np.mean(data[i-window:i])
+        std_lst[i] = np.std(data[i-window:i])
+        
+    up = mean_lst + std * std_lst
+    down = mean_lst - std * std_lst
+    
+    df = pd.DataFrame()
+    df['Upper'] = up
+    df['Lower'] = down
+    return(df)
+
+def STO(data, N=14, M=3):
+    assert 'Low' in data.columns
+    assert 'High' in data.columns
+    assert 'Close' in data.columns
+    
+    data_ = pd.DataFrame()
+    data_['low_N'] = data['Low'].rolling(N).min()
+    data_['high_N'] = data['High'].rolling(N).max()
+    data_['K'] = 100 * (data['Close'] - data_['low_N']) / \
+        (data_['high_N'] - data_['low_N']) # The stochastic oscillator
+    data_['D'] = data_['K'].rolling(M).mean() # the slow and smoothed K
+    return data_
+
+def ADX(high, low, close, lookback):
+    
+    df = pd.DataFrame()
+    plus_dm = high.diff()
+    minus_dm = low.diff()
+    plus_dm[plus_dm < 0] = 0
+    minus_dm[minus_dm > 0] = 0
+    
+    tr1 = pd.DataFrame(high - low)
+    tr2 = pd.DataFrame(abs(high - close.shift(1)))
+    tr3 = pd.DataFrame(abs(low - close.shift(1)))
+    frames = [tr1, tr2, tr3]
+    tr = pd.concat(frames, axis = 1, join = 'inner').max(axis = 1)
+    atr = tr.rolling(lookback).mean()
+    
+    plus_di = 100 * (plus_dm.ewm(alpha = 1/lookback).mean() / atr)
+    minus_di = abs(100 * (minus_dm.ewm(alpha = 1/lookback).mean() / atr))
+    dx = (abs(plus_di - minus_di) / abs(plus_di + minus_di)) * 100
+    adx = ((dx.shift(1) * (lookback - 1)) + dx) / lookback
+    adx_smooth = adx.ewm(alpha = 1/lookback).mean()
+    df['+DI'] = plus_di
+    df['-DI'] = minus_di
+    df['ADX'] = adx_smooth
+    
+    return df
+
+def MACD(price, slow, fast, smooth):
+    exp1 = price.ewm(span = fast, adjust = False).mean()
+    exp2 = price.ewm(span = slow, adjust = False).mean()
+    macd = pd.DataFrame(exp1 - exp2).rename(columns = {'Close':'macd'})
+    signal = pd.DataFrame(macd.ewm(span = smooth, adjust = False).mean()).rename(columns = {'macd':'signal'})
+    hist = pd.DataFrame(macd['macd'] - signal['signal']).rename(columns = {0:'hist'})
+    frames =  [macd, signal, hist]
+    df = pd.concat(frames, join = 'inner', axis = 1)
+    return df
+
+def SuperTrend(high, low, close, lookback, multiplier):
+    # ATR
+    df = pd.DataFrame()
+    
+    tr1 = pd.DataFrame(high - low)
+    tr2 = pd.DataFrame(abs(high - close.shift(1)))
+    tr3 = pd.DataFrame(abs(low - close.shift(1)))
+    frames = [tr1, tr2, tr3]
+    tr = pd.concat(frames, axis = 1, join = 'inner').max(axis = 1)
+    atr = tr.ewm(lookback).mean()
+    
+    # H/L AVG AND BASIC UPPER & LOWER BAND
+    
+    hl_avg = (high + low) / 2
+    upper_band = (hl_avg + multiplier * atr).dropna()
+    lower_band = (hl_avg - multiplier * atr).dropna()
+    
+    # FINAL UPPER BAND
+    
+    final_bands = pd.DataFrame(columns = ['upper', 'lower'])
+    final_bands.iloc[:,0] = [x for x in upper_band - upper_band]
+    final_bands.iloc[:,1] = final_bands.iloc[:,0]
+    
+    for i in range(len(final_bands)):
+        if i == 0:
+            final_bands.iloc[i,0] = 0
+        else:
+            if (upper_band[i] < final_bands.iloc[i-1,0]) | (close[i-1] > final_bands.iloc[i-1,0]):
+                final_bands.iloc[i,0] = upper_band[i]
+            else:
+                final_bands.iloc[i,0] = final_bands.iloc[i-1,0]
+    
+    # FINAL LOWER BAND
+    
+    for i in range(len(final_bands)):
+        if i == 0:
+            final_bands.iloc[i, 1] = 0
+        else:
+            if (lower_band[i] > final_bands.iloc[i-1,1]) | (close[i-1] < final_bands.iloc[i-1,1]):
+                final_bands.iloc[i,1] = lower_band[i]
+            else:
+                final_bands.iloc[i,1] = final_bands.iloc[i-1,1]
+    
+    # SUPERTREND
+    
+    supertrend = pd.DataFrame(columns = [f'supertrend_{lookback}'])
+    supertrend.iloc[:,0] = [x for x in final_bands['upper'] - final_bands['upper']]
+    
+    for i in range(len(supertrend)):
+        if i == 0:
+            supertrend.iloc[i, 0] = 0
+        elif supertrend.iloc[i-1, 0] == final_bands.iloc[i-1, 0] and close[i] < final_bands.iloc[i, 0]:
+            supertrend.iloc[i, 0] = final_bands.iloc[i, 0]
+        elif supertrend.iloc[i-1, 0] == final_bands.iloc[i-1, 0] and close[i] > final_bands.iloc[i, 0]:
+            supertrend.iloc[i, 0] = final_bands.iloc[i, 1]
+        elif supertrend.iloc[i-1, 0] == final_bands.iloc[i-1, 1] and close[i] > final_bands.iloc[i, 1]:
+            supertrend.iloc[i, 0] = final_bands.iloc[i, 1]
+        elif supertrend.iloc[i-1, 0] == final_bands.iloc[i-1, 1] and close[i] < final_bands.iloc[i, 1]:
+            supertrend.iloc[i, 0] = final_bands.iloc[i, 0]
+    
+    supertrend = supertrend.set_index(upper_band.index)
+    supertrend = supertrend.dropna()[1:]
+    
+    # ST UPTREND/DOWNTREND
+    
+    upt = []
+    dt = []
+    close = close.iloc[len(close) - len(supertrend):]
+
+    for i in range(len(supertrend)):
+        if close[i] > supertrend.iloc[i, 0]:
+            upt.append(supertrend.iloc[i, 0])
+            dt.append(np.nan)
+        elif close[i] < supertrend.iloc[i, 0]:
+            upt.append(np.nan)
+            dt.append(supertrend.iloc[i, 0])
+        else:
+            upt.append(np.nan)
+            dt.append(np.nan)
+            
+    st, upt, dt = pd.Series(supertrend.iloc[:, 0]), pd.Series(upt), pd.Series(dt)
+    upt.index, dt.index = supertrend.index, supertrend.index
+    
+    df['ST'] = st
+    df['UPT'] = upt
+    df['DT'] = dt
+    
+    return df
+
+
+
+def PRICE_plot(data, MA = False):
+    fig, (ax1) = plt.subplots(1, 1, figsize=(10, 3))
+    #ax = plt.gca()
+    ax1.set_facecolor('dimgrey')
+    ax1.plot(data.index, data.Close, color = "deepskyblue")
+    #ax1.set_xticks([])
+    plt.grid()
+    plt.show()
+
+
+def STO_plot(data):
+    fig, (ax1) = plt.subplots(1, 1, figsize=(10, 1))
+    ax1.set_facecolor('dimgrey')
+    
+    ax1.plot(data.index, data.D, color = "deepskyblue")
+    ax1.plot(data.index, np.repeat(80,len(data)), color = "white", linestyle = "dotted")
+    ax1.plot(data.index, np.repeat(20,len(data)), color = "white", linestyle = "dotted")
+    plt.show()
+
+def ADX_plot(data, components = False):    
+    fig, (ax1) = plt.subplots(1, 1, figsize=(10, 1))
+    ax1.set_facecolor('dimgrey')
+    
+    if components == False:    
+        ax1.plot(data.index, data['ADX'], color = "deepskyblue")
+    
+    elif components == True:
+        ax1.plot(data.index, data['-DI'], color = "r")
+        ax1.plot(data.index, data['+DI'], color = "g")
+    
+    ax1.plot(data.index, np.repeat(40,len(data)), color = "white", linestyle = "dotted")
+    ax1.plot(data.index, np.repeat(20,len(data)), color = "white", linestyle = "dotted")
+    plt.show()
+
+def MACD_plot(prices, macd, signal, hist):
+    fig, (ax1) = plt.subplots(1, 1, figsize=(10, 1))
+    ax1.set_facecolor('dimgrey')
+
+    for i in range(len(prices)):
+        if str(hist[i])[0] == '-':
+            ax1.bar(prices.index[i], hist[i], color = 'gold')
+        else:
+            ax1.bar(prices.index[i], hist[i], color = 'deepskyblue')
+    
+    plt.grid()
+    plt.show()
+    
+def TRADE_plot(data, buy_price, sell_price):
+    fig, (ax1) = plt.subplots(1, 1, figsize=(10, 5))
+    ax1.set_facecolor('dimgrey')
+    
+    ax1.plot(data.index, data['Close'], linewidth = 2, color = "deepskyblue")
+    ax1.plot(data.index, buy_price, marker = 'o', color = 'lime', markersize = 8, linewidth = 0)
+    ax1.plot(data.index, sell_price, marker = 'X', color = 'tomato', markersize = 8, linewidth = 0)
+    plt.grid()
+    plt.show()
+
+# not useful   
+def RET_plot(data, strategy):
+    fig, (ax1) = plt.subplots(1, 1, figsize=(10, 5))
+    ax1.set_facecolor('dimgrey')
+    
+    rets = data.Close.pct_change().dropna()
+    strat_rets = strategy.position[1:]*rets
+
+    ax1.plot(rets.index, rets, color = 'k', linewidth = 1)
+    ax1.plot(strat_rets.index, strat_rets, color = 'deepskyblue', linewidth = 1)
+    plt.grid()
+    plt.show()
+    
+# very useful   
+def SUM_plot(data, strategy):
+    fig, (ax1) = plt.subplots(1, 1, figsize=(10, 5))
+    ax1.set_facecolor('dimgrey')
+    
+    rets = data.Close.pct_change().dropna()
+    strat_rets = strategy.position[1:]*rets
+    
+    rets_cum = (1 + rets).cumprod() - 1 
+    strat_cum = (1 + strat_rets).cumprod() - 1
+
+    ax1.plot(rets_cum.index, rets_cum, color = 'w', linewidth = 2)
+    ax1.plot(strat_cum.index, strat_cum, color = 'deepskyblue', linewidth = 2)
+    plt.grid()
+    plt.show()
+    print(strat_cum[-1])
+
+
+
+
+
+
+
+def data(x, y, z):
+    # x is a stock symbol
+    # y is a start date
+    # z is an end date
+    # kan bruges på commodities, currencies og aktier
+    
+    #MSFT er en aktier der kan bruges
+    #USDEUR=X er en currency der kan bruges
+    #GC=F er guld priser
+    
+    st = pd.DataFrame()
+    t = yf.Ticker(x)
+    st = t.history(start=y, end=z)
+    st.index = pd.to_datetime(st.index).tz_localize(None)
+    return(st)
+
+
+
+
+
+
+###############################################################################
+#                        Portfolio level important functions
+#                        VaR, CVaR, Drawdown, Annualized returns, etc.
+#                        Not used for trading, but for profit considerations.
+###############################################################################
+
+def var(data, level=5):
+    """
+    """
+    z = norm.ppf(level/100)
+    return(-(data.mean() + z*data.std(ddof=0)))
+
+def cvar(data, level=5):
+    """
+    """
+    confidence_level = 1-(level/100)  # Set the desired confidence level
+    sorted_prices = np.sort(data)
+    num_samples = len(sorted_prices)
+    cvar_index = int((1 - confidence_level) * num_samples)
+    cvar = np.mean(sorted_prices[:cvar_index])
+    return(cvar)
+
+def drawdown(return_series):
+    """
+    """
+    wealth_index = 1000*(1+return_series).cumprod()
+    previous_peaks = wealth_index.cummax()
+    drawdowns = (wealth_index - previous_peaks)/previous_peaks
+    return pd.DataFrame({"Drawdown": drawdowns})
+
+def sharpe(self,x):
+    """
+    """
+    mu = x.mean()
+    sigma = np.sqrt(x.var())
+    return((mu-5) / sigma)
+
+#def sortino(risk_free,degree_of_freedom,growth_rate,minimum):
+    #v=np.sqrt(np.abs(scipy.integrate.quad(lambda g ((risk_freeg)**2)*scipy.stats.t.pdf(g, degree_of_freedom), risk_free, minimum)))
+    #s=(growth_rate-risk_free)/v[0]
+
+    #return s
