@@ -17,5 +17,8 @@ fx more mean reversion - autocorrelation useful.
 - "“How do you recommend adjusting asset exposure or inventory in anticipation of—or in response to—extreme volatility events? Do you use forward-looking metrics like implied skew, or backward-looking stress test models?”"
 
 
+**Laura Ballotta** \
+Can I have access to your paper on "multivariate additive subordination with applications in finance" ?
+
 # illiquid bonds questions
 
