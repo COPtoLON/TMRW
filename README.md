@@ -1,6 +1,11 @@
 # Volatility questions
 
 **Artur Sepp**
+
+CTA trend following https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3167787
+
+
+
 - “In your modeling or trend-following framework, how do you differentiate between temporary volatility spikes—say from market noise or events—and more structural regime changes in volatility dynamics? Are there specific statistical signals or filters you rely on?”
 
 - “Do you integrate macroeconomic or cross-asset signals into your volatility forecasts for longer horizons, and if so, how do you balance that with the responsiveness needed for short-term risk models?”
