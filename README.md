@@ -1,27 +1,28 @@
 # TMRW – A Multi-Horizon AI Trading Framework
 TMRW (Tomorrow Capital Research) is an open, research-grade sandbox for designing, testing and deploying systematic trading strategies across ultra-low-latency to multi-year horizons.
 It marries principles from quantitative finance, statistical physics and modern machine-learning to pursue a single goal: maximum conservation & compounding of portfolio value in any market regime.
-
+\
 
 
 
 ## 1. Core architecture
 
-┌──────────┐   raw feeds  ┌────────┐  engineered  ┌────────┐
-│   Data   │ ───────────▶ │Clean-up│ ───────────▶ │Features│
-└──────────┘               └────────┘              └────────┘
-                                       │
-                          ┌────────────┼──────────────────┐
-                          │            │                  │
-                    ┌──────────┐ ┌──────────┐      ┌──────────┐
-                    │ Risk AI  │ │ Stat AI  │ ...  │Forecast AI│
-                    └──────────┘ └──────────┘      └──────────┘
-                          │            │                  │
-                          └────────────┴──────────────────┘
-                                        ▼
-                                   ┌────────┐
-                                   │  OAI   │  →  Execution
-                                   └────────┘
+┌──────────┐    raw feeds  ┌────────┐  engineered  ┌────────┐ \
+│   Data   │ ───────────▶ │Clean-up│ ───────────▶ │Features│ \
+└──────────┘               └────────┘              └────────┘ \
+                                       │ \
+                          ┌────────────┼──────────────────┐ \
+                          │            │                  │ \
+                    ┌──────────┐ ┌──────────┐      ┌──────────┐ \
+                    │ Risk AI  │ │ Stat AI  │ ...  │Forecast AI│ \
+                    └──────────┘ └──────────┘      └──────────┘ \
+                          │            │                  │ \
+                          └────────────┴──────────────────┘ \
+                                        ▼ \
+                                   ┌────────┐ \
+                                   │  OAI   │  →  Execution \
+                                   └────────┘ \
+                                   
 - Risk AI – option-mitigation, concentration & extreme-value models
 - Statistics AI – battery of regressions, factor & time-series tests
 - Strategy AI – rule-based logic plus three RL agents (Speedy, Risky, Trendy) that learn bid/ask placement à la Avellaneda-Stoikov.
