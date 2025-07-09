@@ -59,7 +59,7 @@ cd TMRW
 conda env create -f environment.yml   # file path listed, not yet pushed
 conda activate tmrw
 jupyter lab                            # walk through AI-trading.ipynb
-``` 
+````
 
 ## 7  Who Might Care  
 * **Quant researchers** wanting a skeletal yet conceptually rich playground that mixes RL, HMMs and classic factor models.  
@@ -74,9 +74,8 @@ jupyter lab                            # walk through AI-trading.ipynb
 
 ---
 
-### Bottom line  
+## Bottom line  
 TMRW is less a finished library and more a comprehensive design dossier for a multi-horizon, AI-driven quant fund.  The architectural clarity, extensive theory notes and RL-first mindset make it a promising base for experimentation—provided contributors are ready to flesh out the missing code and connect the dots from white-paper to production.
-::contentReference[oaicite:27]{index=27}
-````
+
 
 
